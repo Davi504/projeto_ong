@@ -2,53 +2,80 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projetos Sociais - Organização</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
-        <img src="../img/logo.png" alt="Logo da Organização" width="120">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="../img/logo.png" alt="Logo da Organização" class="logo">
+            </div>
+            <nav class="nav-area">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+            <!-- Botão hambúrguer para mobile -->
+            <div class="hamburger" onclick="document.querySelector('.nav-area ul').classList.toggle('show')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
-        <section>
+    <main class="container">
+        <!-- Introdução -->
+        <section class="card grid-col-12">
             <h1>Nossos Projetos Sociais</h1>
             <p>
                 Conheça as iniciativas que desenvolvemos para transformar vidas e fortalecer a comunidade.
             </p>
         </section>
 
-        <section>
+        <!-- Projetos em andamento -->
+        <section class="card grid-col-12">
             <h2>Projetos em Andamento</h2>
-            <article>
-                <h3>Projeto Educação para Todos</h3>
-                <p>
-                    Aulas de reforço escolar e oficinas culturais para crianças em situação de vulnerabilidade.
-                </p>
-                <img src="../img/projetos/projeto1.png" alt="Crianças estudando em sala de aula comunitária">
-            </article>
+<div class="bloco-projeto">
+    <div class="projeto">
+        <div class="projeto-texto">
+            <h3>Projeto Educação para Todos</h3>
+            <p>
+                Aulas de reforço escolar e oficinas culturais para crianças em situação de vulnerabilidade.
+            </p>
+                    </div>
+                    <div class="projeto-img">
+                        <img src="../img/projetos/projeto1.png" alt="Crianças estudando" />
+                    </div>
+                    </div>
+                    </div>
 
-            <article>
-                <h3>Projeto Alimenta Esperança</h3>
-                <p>
-                    Distribuição de cestas básicas e refeições para famílias em situação de insegurança alimentar.
-                </p>
-                <img src="../img/projetos/projeto2.png" alt="Voluntários entregando cestas básicas">
-            </article>
+            <div class="bloco-projeto">
+                <div class="projeto">
+                    <div class="projeto-texto">
+                        <h3>Projeto Alimenta Esperança</h3>
+                        <p>
+                            Distribuição de cestas básicas e refeições para famílias em situação de insegurança
+                            alimentar.
+                            </p>
+                    </div>
+                    <div class="projeto-img">
+                        <img src="../img/projetos/projeto2.png" alt="Entrega de alimentos" />
+                    </div>
+                    </div>
+                    </div>
         </section>
 
-        <section>
+        <!-- Voluntariado -->
+        <section class="card grid-col-12">
             <h2>Como Ser Voluntário</h2>
             <p>
                 Você pode participar ativamente dos nossos projetos dedicando algumas horas por semana.
@@ -56,7 +83,8 @@
             </p>
         </section>
 
-        <section>
+        <!-- Doações -->
+        <section class="card grid-col-12">
             <h2>Como Doar</h2>
             <p>
                 Sua contribuição é fundamental para mantermos nossas ações. Doe via PIX, transferência bancária ou

@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organização Social - Página Inicial</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header>
-        <img src="../img/logo.png" alt="Logo da Organização" width="120">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="../img/logo.png" alt="Logo da Organização" class="logo">
+            </div>
+            <nav class="nav-area">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+            <!-- Botão hambúrguer para mobile -->
+            <div class="hamburger" onclick="document.querySelector('.nav-area ul').classList.toggle('show')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
-        <section>
+    <main class="container">
+        <!-- Bloco de boas-vindas -->
+        <section class="card grid-col-12">
             <h1>Bem-vindo à Nossa Organização</h1>
             <p>
                 Somos uma instituição dedicada a promover impacto social positivo por meio de projetos de voluntariado e
@@ -31,7 +43,8 @@
             <img src="../img/equipe.png" alt="Equipe de voluntários da organização">
         </section>
 
-        <section>
+        <!-- Bloco missão -->
+        <section class="card grid-col-12">
             <h2>Nossa Missão</h2>
             <p>
                 Trabalhar em prol da comunidade, oferecendo apoio a famílias em situação de vulnerabilidade e
@@ -39,7 +52,8 @@
             </p>
         </section>
 
-        <section>
+        <!-- Bloco contato -->
+        <section class="card grid-col-12">
             <h2>Entre em Contato</h2>
             <address>
                 <p><strong>Telefone:</strong> (11) 99999-9999</p>
