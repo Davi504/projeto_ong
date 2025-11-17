@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização Social - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="img/logo.png" alt="Logo da Organização" class="logo">
+            </div>
+            <nav class="nav-area">
+                <ul>
+                    <li><a href="#/index" data-link>Início</a></li>
+                    <li><a href="#/projetos" data-link>Projetos</a></li>
+                    <li><a href="#/cadastro" data-link>Cadastro</a></li>
+                </ul>
+            </nav>
+            <!-- Botão hambúrguer para mobile -->
+            <div class="hamburger" onclick="document.querySelector('.nav-area ul').classList.toggle('show')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo dinâmico -->
+    <main id="app" class="container"></main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Organização Social. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/templates.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/spa.js"></script>
+</body>
+
+</html>

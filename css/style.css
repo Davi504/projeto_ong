@@ -383,3 +383,41 @@ footer {
     border-radius: 8px;
     margin-top: var(--esp-2);
 }
+/* =========================
+   VALIDAÇÃO DE FORMULÁRIOS (JS)
+========================= */
+
+/* Estados de validação controlados pelo JS */
+input.is-invalid {
+    border: 2px solid var(--cor-destaque);
+    background-color: #ffe5e5;
+}
+
+input.is-valid {
+    border: 2px solid var(--cor-sucesso);
+    background-color: #e6ffe6;
+}
+
+/* Mensagens de erro abaixo do campo */
+.field-error {
+    color: var(--cor-destaque);
+    font-size: var(--small);
+    margin-top: 4px;
+    text-align: left;
+}
+
+/* Mensagem de sucesso no topo do formulário */
+.form-success {
+    background: var(--cor-sucesso);
+    color: white;
+    padding: var(--esp-2);
+    border-radius: 6px;
+    margin-bottom: var(--esp-2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-area a.active {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
